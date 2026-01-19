@@ -1,0 +1,38 @@
+/* style.css */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* style.css に追加 */
+.link-button {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0066cc;
+}
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+.image-text-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.image-text-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-side {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
