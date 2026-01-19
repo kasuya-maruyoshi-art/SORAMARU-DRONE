@@ -22,7 +22,6 @@
   background-color: #004999;
 }
 
-}
 .center-image {
   display: block;
   margin: 0 auto;
@@ -61,28 +60,19 @@ body {
 }
 .button-row {
   display: flex;
-  justify-content: space-between; /* 均等に配置 */
-  gap: 20px; /* ボタン間のスペース（任意） */
-  flex-wrap: wrap; /* 画面が狭いときに折り返し */
-  margin: 20px 0;
+  justify-content: space-between;
+  gap: 2px;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .link-button {
-  flex: 1; /* 各ボタンが同じ幅になる */
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0066cc;
-  padding: 12px 0;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-  min-width: 150px; /* 幅が狭くなりすぎないように */
+  margin: 0;
+  padding: 12px 50px;
 }
 
-.link-button:hover {
-  background-color: #004999;
-}
+
+
 .map-container {
   position: relative;
   display: inline-block;
@@ -120,4 +110,4 @@ body {
 }
 
 
-}
+
