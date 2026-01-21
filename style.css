@@ -53,17 +53,18 @@ body {
     font-size: 18px; 
   }
 
+  
   .button-row {
     flex-direction: column;
     align-items: center;
   }
 
   .link-button {
-  flex: 1;
-  max-width: 320px;
-  margin-bottom: 8px;
-}
-
+    width: 280px;
+    max-width: 90%;
+    margin-bottom: 8px;
+    text-align: center;
+  }
 
   .image-text-box {
     flex-direction: column;
@@ -77,8 +78,7 @@ body {
   h1 {
   font-size: clamp(20px, 5vw, 36px);
   white-space: nowrap;
-}
-
+ }
 }
 
 .map-container {
