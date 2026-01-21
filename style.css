@@ -57,9 +57,10 @@ body {
   }
 
   .link-button {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  flex: 1;
+  max-width: 250px;
+}
+
 
   .image-text-box {
     flex-direction: column;
@@ -70,10 +71,6 @@ body {
     font-size: 20px;
   }
 }
-
-
-
-
 
 .map-container {
   position: relative;
