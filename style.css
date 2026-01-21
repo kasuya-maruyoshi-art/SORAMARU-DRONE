@@ -59,6 +59,7 @@ body {
   .link-button {
   flex: 1;
   max-width: 250px;
+  margin-bottom: 16px;
 }
 
 
