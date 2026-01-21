@@ -6,6 +6,8 @@
   padding: 0 20px;
 }
 
+h1 { font-size: 36px; /* PC用の基本サイズ */ text-align: center; margin-top: 40px; }
+
 /* style.css に追加 */
 .button-row {
   display: flex;
@@ -71,6 +73,12 @@ body {
   .text-side {
     font-size: 20px;
   }
+
+  h1 {
+  font-size: clamp(20px, 5vw, 36px);
+  white-space: nowrap;
+}
+
 }
 
 .map-container {
