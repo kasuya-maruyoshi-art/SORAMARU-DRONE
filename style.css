@@ -6,9 +6,10 @@
   padding: 0 20px;
 }
 
-h1 { font-size: 36px; /* PC用の基本サイズ */ 
-  text-align: left; margin-top: 40px; 
-  white-space: nowrap;
+h1 { font-size: clamp(16px, 5vw, 36px); /* 画面に応じて縮む */ 
+  text-align: left; 
+  margin-top: 40px; 
+  white-space: normal; /* 折り返しOK */
 }
 
 /* style.css に追加 */
@@ -82,10 +83,7 @@ body {
     font-size: 20px;
   }
 
-  h1 {
-    font-size: clamp(20px, 5vw, 36px);
-    white-space: nowrap;
-  }
+  
 }
 
 
@@ -131,4 +129,13 @@ body {
   display: block;
 }
 
+/* style.css に追加 */
+.highlight-box {
+  background-color: lightgreen;
+  color: darkblue;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 35px;
+  margin-bottom: 16px;
+}
 
