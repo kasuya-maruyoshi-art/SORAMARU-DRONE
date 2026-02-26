@@ -1,15 +1,17 @@
 /* style.css */
 .container {
-  max-width: 1200px;
+  align-items: stretch; /* 子要素の高さを揃える */
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  gap: 20px;
 }
 
 h1 { font-size: clamp(16px, 5vw, 36px); /* 画面に応じて縮む */ 
   text-align: left; 
   margin-top: 40px; 
-  white-space: normal; /* 折り返しOK */
+  white-space: nowrap; /* 折り返しOK */
 }
 
 /* style.css に追加 */
@@ -124,18 +126,51 @@ body {
 }
 
 .main-banner {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: clamp(150px, 30%, 200px); 
+  height: clamp(150px, 20vw, 200px);
+  display: block; 
+  object-fit: contain; /* 高さを揃えるときに画像が潰れないように */ 
 }
 
 /* style.css に追加 */
 .highlight-box {
+  min-height: 50px;
   background-color: lightgreen;
   color: darkblue;
   padding: 10px;
   border-radius: 8px;
-  font-size: 35px;
-  margin-bottom: 16px;
+  font-size: clamp(16px, 2vw, 36px);
+  display: flex;
+  align-items: center;         /* 垂直方向の中央揃え */
+  justify-content: center;     /* 水平方向の中央揃え */
+  margin-bottom: 50px;
+  flex: 1;
+  line-height: 1;
+  text-align: center;
 }
 
+.highlight-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+
+.info-box { 
+  width: clamp(300px, 60%, 800px); 
+  height: clamp(100px, 15vw, 150px);
+  border: 2px solid red; /* 赤い枠線 */ 
+  border-radius: 10px; /* 角を丸く */ 
+  padding: 10px 15px; /* 内側の余白 */ 
+  background-color: #fff8f8; /* 薄い赤背景（任意） */ 
+  font-size: clamp(14px, 2vw, 20px);
+  flex: 1; /* 残りの幅を全部使う */
+  display: flex; /* 中のテキストを中央に配置するため */ 
+  align-items: center; /* 垂直方向に中央寄せ */
+  justify-content: center; /* 左右中央揃え ← これを追加！ */
+  margin-right: 20px; /* 右側に余白を追加 */
+  margin-bottom: 20px;
+  text-align: center; /* 各行のテキストを中央揃え */
+  line-height: 2.0; /* 行の高さを1.6倍にする */
+  }
