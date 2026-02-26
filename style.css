@@ -174,3 +174,15 @@ body {
   text-align: center; /* 各行のテキストを中央揃え */
   line-height: 2.0; /* 行の高さを1.6倍にする */
   }
+
+  .image-button {
+  width: 200px;        /* お好みでサイズ調整 */
+  height: auto;
+  cursor: pointer;     /* カーソルをポインターに */
+  transition: 0.3s;    /* ホバー時のアニメーション */
+}
+
+.image-button:hover {
+  opacity: 0.8;        /* ホバー時に少し薄くする */
+}
+
