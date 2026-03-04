@@ -188,16 +188,14 @@ body {
 }
 
 .text-box {
-  font-size: clamp(16px, 2vw, 36px);
-  height: 100px;              /* 高さを指定（必要に応じて調整） */
-  display: flex;
-  align-items: center;        /* 上下中央揃え！ */
-  justify-content: flex-start;/* 左寄せ（中央にしたいなら center） */
+  text-align: left;
   padding: 0 10px;
 }
+
 .text-box p {
   margin-top: 20px; 
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .info-row {
@@ -240,4 +238,32 @@ body {
   max-width: 800px; /* 必要に応じて調整してね */
   margin: 0 auto;
   text-align: center;
+  line-height: 1.5; 
 }
+
+.left-text {
+  text-align: left;
+}
+
+.blue-box {
+  background-color: #0036cc; /* 青色 */
+  color: white;              /* 文字色を白に */
+  padding: 20px;             /* 内側の余白 */
+  border-radius: 10px;       /* 角を丸く */
+  font-size: clamp(16px, 5vw, 36px);
+  text-align: center;        /* 中央寄せ（左寄せにしたい場合は left） */
+  margin: 20px 0;            /* 上下の余白 */
+  line-height: 1.6;          /* 行間 */
+}
+
+.text-image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 上下中央揃え */
+  gap: 20px;
+}
+
+.image-part img {
+  max-height: 200px; /* 高さを制限して行間を守る */
+  height: auto;
+  }
