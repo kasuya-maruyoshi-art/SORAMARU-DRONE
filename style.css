@@ -2,10 +2,11 @@
 body {
   font-family: 'Kosugi Maru', sans-serif;
   font-size: 20px;
+  line-height: 1.8;   /* ← 行間を広げる */
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -54,12 +55,12 @@ body {
 }
 
 .info-box {
-  width: clamp(200px, 50%, 800px);
+  width: clamp(200px, 50%, 1000px);
   border: 2px solid red;
   border-radius: 10px;
   padding: 10px 15px;
   background-color: #fff8f8;
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(12px, 2vw, 20px);
   flex: 1;
   display: flex;
   align-items: center;
@@ -88,8 +89,9 @@ body {
   padding: 12px 0;
   border-radius: 8px;
   transition: background-color 0.3s;
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(12px, 2vw, 20px);
 }
+
 
 .link-button:hover {
   background-color: #004999;
@@ -109,6 +111,61 @@ body {
   margin-bottom: 20px;
   line-height: 1;
 }
+
+.thumb {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.blue-box {
+  background-color: #007acc; /* 青色 */
+  color: white;              /* 文字色を白に */
+  padding: 20px;             /* 内側の余白 */
+  border-radius: 10px;       /* 角を丸く */
+  font-size: 20px;           /* 文字サイズ */
+  text-align: center;        /* 中央寄せ（左寄せにしたい場合は left） */
+  margin: 20px 0;            /* 上下の余白 */
+  line-height: 1.6;          /* 行間 */
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* テキスト＋画像の横並び（PC） */
+.text-image-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* テキスト部分 */
+.text-part {
+  flex: 1;
+}
+
+/* 画像部分 */
+.image-part {
+  flex: 1;
+  text-align: center;
+}
+
+.image-part img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /* スマホ最適化 */
 @media (max-width: 767px) {
@@ -153,4 +210,21 @@ body {
     max-width: 100%;  /* ← 画面いっぱいに */
     font-size: 16px;  /* ← 少し大きめにしてもOK */
   }
+
+  .text-image-row {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .text-part p {
+    text-align: left;
 }
+
+ .image-part img {
+    width: 100%;
+    max-width: 100%;   /* ← 350px の制限を解除する */
+    height: auto;
+  }
+
+}
+
