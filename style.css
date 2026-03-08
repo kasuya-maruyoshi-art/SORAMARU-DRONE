@@ -221,7 +221,7 @@ body {
 }
 
  .image-part img {
-    max-width:80%;   /* ← 350px の制限を解除する */
+    max-width:100%;   /* ← 350px の制限を解除する */
     height: auto;
   }
 
