@@ -55,7 +55,7 @@ body {
 }
 
 .info-box {
-  width: clamp(200px, 50%, 1000px);
+  width: clamp(200px, 50%, 1200px);
   border: 2px solid red;
   border-radius: 10px;
   padding: 10px 15px;
@@ -168,7 +168,7 @@ body {
 
 
 /* スマホ最適化 */
-@media (max-width: 850px) {
+@media (max-width: 500px) {
 
   body {
     font-size: 12px;
@@ -213,7 +213,6 @@ body {
   }
 
   .text-image-row {
-    flex-direction: column;
     text-align: left;
   }
 
@@ -222,8 +221,7 @@ body {
 }
 
  .image-part img {
-    width: 100%;
-    max-width: 100%;   /* ← 350px の制限を解除する */
+    max-width:80%;   /* ← 350px の制限を解除する */
     height: auto;
   }
 
