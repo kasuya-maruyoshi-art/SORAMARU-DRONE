@@ -235,6 +235,12 @@ body {
 
 }
 
+@media (max-width: 500px) {
+  .youtube-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .youtube-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -259,11 +265,7 @@ body {
   transform: scale(1.02);
 }
 
-@media (max-width: 500px) {
-  .youtube-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* YouTube カード全体 */
 .yt-card {
   width: 100%;
