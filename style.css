@@ -108,8 +108,8 @@ body {
 /* ハイライトBOX */
 .highlight-box {
   min-height: 50px;
-  background-color: lightgreen;
-  color: darkblue;
+  background-color: rgb(19, 113, 254);
+  color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 8px;
   font-size: clamp(12px, 4vw, 20px);
