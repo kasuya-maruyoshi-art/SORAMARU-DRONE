@@ -233,12 +233,17 @@ body {
     height: auto;
   }
 
+.no-break {
+    display: inline-block;
+}  
+
+
+
   /* ← ここにYouTubeもまとめる */
   .youtube-grid {
     grid-template-columns: 1fr;
   }
 }
-
 
 .youtube-grid {
   display: grid;
